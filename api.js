@@ -23,7 +23,7 @@ router.post("/add",function(request,response){
     });
     router.get("/abhilash",function(req,res){
         var name=req.query.name;
-       user.find({dbfirstName:name},function(err,data){
+       user.find({},function(err,data){
            if(err){
                res.send(err);
            }else{
